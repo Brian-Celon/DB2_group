@@ -8,23 +8,22 @@
 </head>
 <body>  
     <div class="card">
-    <h1>Register</h1>
-    <form class="register_form" id="register_Form">
-        <label>Full name:</label>
-        <input id="full_name" type="text" class="form_input" placeholder="Enter your full name"><br>
+        <h1>Register</h1>
+        <form class="register_form" id="register_Form">
+            <label for="full_name">Full name:</label>
+            <input id="full_name" type="text" class="form_input" placeholder="Enter your full name" required>
 
-        <label>Email:</label>
-        <input id="register_email" type="email" class="form_input" placeholder="Enter email address"><br>
+            <label for="register_email">Email:</label>
+            <input id="register_email" type="email" class="form_input" placeholder="Enter email address" required>
 
-        <label>Password:</label>
-        <input id="register_password" type="password" class="form_input" placeholder="Enter your password"><br>
+            <label for="register_password">Password:</label>
+            <input id="register_password" type="password" class="form_input" placeholder="Enter your password" required>
 
-        <button class="btn_login">Register</button><br>
-        <p class="account">Already have an account?<a href="index.html">Login</a></p>
-    </form>
+            <button type="submit" class="btn_login">Register</button>
+            <p class="account">Already have an account? <a href="index.html">Login</a></p>
+        </form>
     </div>
 
     <script src="script.js"></script>
-    
 </body>
 </html>

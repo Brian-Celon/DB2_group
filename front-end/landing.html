@@ -3,9 +3,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>SECTOR 7 | Esports Lounge, Japanese Arcade & Craft Kitchen</title>
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Welcome</h1>
+<body class="landing-page">
+
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <div class="site-width announcement-inner">
+            <span>
+                <i class="fa-solid fa-circle-dot status-pulse"></i>
+                Venue Status: Open Today &bull; 11:00 AM &ndash; 2:00 AM
+            </span>
+            <span class="announcement-right">
+                <i class="fa-solid fa-location-dot"></i> 420 N Grand Ave &bull; All Stations Calibrated
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="site-width nav-inner">
+            <a href="landing.html" class="brand-logo">
+                <span class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+                <span class="brand-name">SECTOR 7</span>
+                <span class="brand-sub">LOUNGE &bull; ARCADE</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#stations">Battle Stations</a>
+                <a href="#arcade">Arcade Roster</a>
+                <a href="#menu">Kitchen &amp; Bar</a>
+                <a href="#pricing">Session Rates</a>
+                <a href="#venue-info">Venue Info</a>
+            </nav>
+
+            <div class="nav-user-ctrl">
+                <span class="session-badge">
+                    <i class="fa-solid fa-circle-check"></i> Member Active
+                </span>
+                <a href="index.html" class="btn-logout" title="Sign out of your session">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Sign Out</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="site-width hero-container">
+            <div class="hero-text-col">
+                <div class="eyebrow-pill">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Tournament Grade &bull; RTX 4080 Super &bull; 240Hz Fast-IPS</span>
+                </div>
+                <h1 class="hero-heading">
+                    Esports Battle Rigs, Imported Arcades &amp; Scratch Kitchen.
+                </h1>
+                <p class="hero-description">
+                    Downtown's premier gaming clubhouse. Competitive PC stations calibrated for low-latency tournament play, authentic Japanese arcade cabinets, full bar service, and late-night eats delivered directly to your station.
+                </p>
+                <div class="hero-actions">
+                    <a href="#stations" class="btn btn-primary">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Explore Stations</span>
+                    </a>
+                    <a href="#menu" class="btn btn-secondary">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>Food &amp; Drinks Menu</span>
+                    </a>
+                </div>
+
+                <!-- Hardware Badges Strip -->
+                <div class="hardware-strip">
+                    <div class="hw-item">
+                        <i class="fa-solid fa-microchip"></i>
+                        <div>
+                            <strong>i9-14900K &bull; 4080S</strong>
+                            <small>Tournament Spec</small>
+                        </div>
+                    </div>
+                    <div class="hw-item">
+                        <i class="fa-solid fa-display"></i>
+                        <div>
+                            <strong>240Hz Fast-IPS</strong>
+                            <small>0.5ms G-Sync Panels</small>
+                        </div>
+                    </div>
+                    <div class="hw-item">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <div>
+                            <strong>10Gbps Fiber</strong>
+                            <small>Sub-5ms Local Ping</small>
+                        </div>
+                    </div>
+                    <div class="hw-item">
+                        <i class="fa-solid fa-martini-glass"></i>
+                        <div>
+                            <strong>Craft Bar</strong>
+                            <small>Open Until 2:00 AM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-col">
+                <div class="hero-card-frame">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80" alt="Esports Gaming Setup at Sector 7" class="hero-img">
+                    <div class="hero-img-caption">
+                        <div class="caption-badge">Main Arena Floor</div>
+                        <p>40 Station Pro Arena &bull; Secretlab Titan Evo Seating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Gaming Zones & Hardware -->
+    <section class="content-section" id="stations">
+        <div class="site-width">
+            <div class="section-title-wrap">
+                <div class="section-tag">
+                    <i class="fa-solid fa-sliders"></i> HARDWARE ARCHITECTURE
+                </div>
+                <h2>Calibrated For Serious Play</h2>
+                <p>No consumer bloatware. Every station runs clean custom Windows gaming images with per-game profile optimization and instant-load gigabit game libraries.</p>
+            </div>
+
+            <div class="zone-grid">
+                <!-- Zone Card 1 -->
+                <article class="zone-card">
+                    <div class="zone-media">
+                        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="PC Gaming Battle Arena">
+                        <span class="media-tag"><i class="fa-solid fa-desktop"></i> PC Battleground</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>Pro PC Battle Stations</h3>
+                        <p class="zone-intro">Tailored for Valorant, Counter-Strike 2, Apex Legends, and League of Legends ranked grinders.</p>
+                        
+                        <div class="spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-microchip"></i> Processor</span>
+                                <span class="spec-val">Intel Core i9-14900KF (Liquid Cooled)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-hard-drive"></i> Graphics</span>
+                                <span class="spec-val">NVIDIA RTX 4080 Super 16GB GDDR6X</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-tv"></i> Monitor</span>
+                                <span class="spec-val">ASUS ROG Swift 27" 240Hz 0.5ms Fast-IPS</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-keyboard"></i> Peripherals</span>
+                                <span class="spec-val">Wooting 60HE &bull; Logitech G Pro X Superlight 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Zone Card 2 -->
+                <article class="zone-card" id="arcade">
+                    <div class="zone-media">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Authentic Japanese Arcade Cabinets">
+                        <span class="media-tag"><i class="fa-solid fa-gamepad"></i> Arcade Alley</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>Japanese &amp; Retro Arcade</h3>
+                        <p class="zone-intro">Direct Japanese imports and meticulously maintained original candy cabinets on a clean cashless RFID card system.</p>
+                        
+                        <div class="spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-fist-raised"></i> Fighting Roster</span>
+                                <span class="spec-val">Tekken 8 (Noir Cabs) &bull; Street Fighter 6 (Vewlix)</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-music"></i> Rhythm Stage</span>
+                                <span class="spec-val">Taiko no Tatsujin Nijiiro &bull; DDR A3 120Hz</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-bullseye"></i> Pinball Lineup</span>
+                                <span class="spec-val">Stern Godzilla Premium &bull; Jurassic Park 30th</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-id-card"></i> Card System</span>
+                                <span class="spec-val">Tap-to-play RFID card with real-time balance</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Zone Card 3 -->
+                <article class="zone-card">
+                    <div class="zone-media">
+                        <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80" alt="VR Simulator and Console Lounge">
+                        <span class="media-tag"><i class="fa-solid fa-vr-cardboard"></i> Sim &amp; Consoles</span>
+                    </div>
+                    <div class="zone-content">
+                        <h3>Racing Simulators &amp; Consoles</h3>
+                        <p class="zone-intro">High-immersion direct drive racing rigs and private leather couch booths with 4K OLED displays.</p>
+                        
+                        <div class="spec-table">
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-car"></i> Racing Wheel</span>
+                                <span class="spec-val">Fanatec DD Pro 8Nm Direct Drive &bull; Loadcell Pedals</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-chair"></i> Motion Rig</span>
+                                <span class="spec-val">Next Level Racing Cockpit with Bass Shakers</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-couch"></i> Console Pods</span>
+                                <span class="spec-val">PlayStation 5 &bull; Nintendo Switch OLED 4-Player</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-key"><i class="fa-solid fa-film"></i> Screens</span>
+                                <span class="spec-val">LG 65" C3 Series 4K 120Hz G-Sync OLEDs</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Kitchen & Craft Bar Menu -->
+    <section class="content-section section-alternate" id="menu">
+        <div class="site-width">
+            <div class="section-title-wrap">
+                <div class="section-tag">
+                    <i class="fa-solid fa-utensils"></i> SCRATCH KITCHEN &amp; BAR
+                </div>
+                <h2>Made-to-Order Kitchen &amp; Craft Bar</h2>
+                <p>Real food crafted by our culinary team. Delivered straight to your PC battle station or served at our comfortable bar counters.</p>
+            </div>
+
+            <div class="menu-layout">
+                <!-- Food Column -->
+                <div class="menu-column">
+                    <div class="menu-col-header">
+                        <div class="menu-col-icon"><i class="fa-solid fa-burger"></i></div>
+                        <div>
+                            <h3>Hot Food &amp; Sharables</h3>
+                            <small>Served fresh daily until 1:30 AM</small>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-list">
+                        <!-- Food Item 1 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">The Tokyo Double Smash</span>
+                                <span class="item-price">$13.50</span>
+                            </div>
+                            <p class="item-desc">Two 4oz chuck &amp; brisket smashed patties, sharp American cheese, house togarashi pickles, kewpie mayo, toasted brioche bun.</p>
+                            <span class="dietary-badge"><i class="fa-solid fa-fire"></i> House Signature</span>
+                        </div>
+
+                        <!-- Food Item 2 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Crispy Garlic Karaage Bites</span>
+                                <span class="item-price">$10.00</span>
+                            </div>
+                            <p class="item-desc">Double-fried marinated chicken thighs, scallions, roasted sesame, served with sweet chili ponzu dip.</p>
+                        </div>
+
+                        <!-- Food Item 3 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Kimchi Loaded Waffle Fries</span>
+                                <span class="item-price">$9.00</span>
+                            </div>
+                            <p class="item-desc">Criss-cut crispy waffle fries, aged house kimchi, sharp cheddar cheese sauce, gochujang crema, chopped scallions.</p>
+                            <span class="dietary-badge"><i class="fa-solid fa-leaf"></i> Vegetarian Option</span>
+                        </div>
+
+                        <!-- Food Item 4 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Korean Glazed Sticky Wings (8 pcs)</span>
+                                <span class="item-price">$12.50</span>
+                            </div>
+                            <p class="item-desc">Jumbo bone-in wings tossed in sticky honey-gochujang or garlic soy glaze with pickled daikon radish.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Column -->
+                <div class="menu-column">
+                    <div class="menu-col-header">
+                        <div class="menu-col-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div>
+                            <h3>Craft Drinks &amp; Fuel Bar</h3>
+                            <small>Specialty coffee, mocktails &amp; local taps</small>
+                        </div>
+                    </div>
+
+                    <div class="menu-items-list">
+                        <!-- Drink Item 1 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Kyoto 18-Hr Slow Drip Cold Brew</span>
+                                <span class="item-price">$5.25</span>
+                            </div>
+                            <p class="item-desc">Single-origin Ethiopian Yirgacheffe slow-dripped drop by drop through Japanese glass towers. High clarity, zero bitterness.</p>
+                            <span class="dietary-badge"><i class="fa-solid fa-bolt"></i> High Caffeine</span>
+                        </div>
+
+                        <!-- Drink Item 2 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Yuzu Matcha Sparkler</span>
+                                <span class="item-price">$6.50</span>
+                            </div>
+                            <p class="item-desc">Ceremonial grade Uji matcha whisked fresh, sparkling Japanese yuzu juice, organic cane syrup, fresh crushed mint.</p>
+                        </div>
+
+                        <!-- Drink Item 3 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Okinawa Brown Sugar Boba Milk</span>
+                                <span class="item-price">$6.75</span>
+                            </div>
+                            <p class="item-desc">Warm brown sugar tapioca pearls, organic whole milk or oat milk, torched salted cream cheese foam.</p>
+                        </div>
+
+                        <!-- Drink Item 4 -->
+                        <div class="menu-entry">
+                            <div class="menu-entry-top">
+                                <span class="item-name">Rotating Draft Beers &amp; Ciders (16oz)</span>
+                                <span class="item-price">$7.50</span>
+                            </div>
+                            <p class="item-desc">Asahi Super Dry, local Hazy IPAs, and seasonal crisp apple cider on continuous draft rotation.</p>
+                            <span class="dietary-badge"><i class="fa-solid fa-wine-glass"></i> 21+ Valid ID Req</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Callout Row -->
+            <div class="menu-photo-strip">
+                <div class="photo-box">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Gourmet Smash Burger">
+                    <span>Tokyo Double Smash Burger</span>
+                </div>
+                <div class="photo-box">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Artisan Coffee and Drinks">
+                    <span>Slow-Drip Coffee &amp; Mocktail Bar</span>
+                </div>
+                <div class="photo-box">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Social Lounge Atmosphere">
+                    <span>Casual Dining &amp; Console Lounge</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Session Rates & Passes -->
+    <section class="content-section" id="pricing">
+        <div class="site-width">
+            <div class="section-title-wrap">
+                <div class="section-tag">
+                    <i class="fa-solid fa-ticket"></i> TRANSPARENT RATES
+                </div>
+                <h2>Simple, Honest Pricing</h2>
+                <p>No sneaky sign-up charges or hidden hardware fees. Accurate down-to-the-minute tracking with automatic balance preservation when you pause.</p>
+            </div>
+
+            <div class="rates-grid">
+                <!-- Tier 1 -->
+                <div class="rate-card">
+                    <div class="rate-header">
+                        <h3>Hourly Drop-In</h3>
+                        <p>Flexible play without commitments</p>
+                    </div>
+                    <div class="rate-price">
+                        <span class="currency">$</span>
+                        <span class="val">6</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="rate-features">
+                        <li><i class="fa-solid fa-check"></i> Standard 240Hz PC or Console access</li>
+                        <li><i class="fa-solid fa-check"></i> Per-minute precise time banking</li>
+                        <li><i class="fa-solid fa-check"></i> Full game library &amp; gigabit network</li>
+                        <li><i class="fa-solid fa-check"></i> Bring your own peripherals allowed</li>
+                    </ul>
+                    <a href="#venue-info" class="btn-rate">Walk In or Reserve</a>
+                </div>
+
+                <!-- Tier 2 (Highlighted) -->
+                <div class="rate-card rate-featured">
+                    <div class="popular-tag">MOST POPULAR</div>
+                    <div class="rate-header">
+                        <h3>3-Hour Squad Pass</h3>
+                        <p>Ideal for ranked grinding with friends</p>
+                    </div>
+                    <div class="rate-price">
+                        <span class="currency">$</span>
+                        <span class="val">15</span>
+                        <span class="period">/ 3 hours</span>
+                    </div>
+                    <ul class="rate-features">
+                        <li><i class="fa-solid fa-check"></i> 3 continuous hours on any battle station</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>10 Free Arcade Credits</strong> on RFID card</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Free house drip coffee or soft drink</li>
+                        <li><i class="fa-solid fa-check"></i> 17% savings over standard hourly rate</li>
+                    </ul>
+                    <a href="#venue-info" class="btn-rate btn-rate-featured">Get Squad Pass</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="rate-card">
+                    <div class="rate-header">
+                        <h3>The All-Nighter</h3>
+                        <p>Overnight lock-in session</p>
+                    </div>
+                    <div class="rate-price">
+                        <span class="currency">$</span>
+                        <span class="val">24</span>
+                        <span class="period">/ 11 PM &ndash; 6 AM</span>
+                    </div>
+                    <ul class="rate-features">
+                        <li><i class="fa-solid fa-check"></i> 7 hours of non-stop station access</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>25 Free Arcade Credits</strong> included</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited drip coffee refills throughout the night</li>
+                        <li><i class="fa-solid fa-check"></i> 15% discount on all kitchen food orders</li>
+                    </ul>
+                    <a href="#venue-info" class="btn-rate">Book All-Nighter</a>
+                </div>
+
+                <!-- Tier 4 -->
+                <div class="rate-card">
+                    <div class="rate-header">
+                        <h3>Private 5-Man Pod</h3>
+                        <p>Acoustically isolated team suite</p>
+                    </div>
+                    <div class="rate-price">
+                        <span class="currency">$</span>
+                        <span class="val">28</span>
+                        <span class="period">/ hour (suite)</span>
+                    </div>
+                    <ul class="rate-features">
+                        <li><i class="fa-solid fa-check"></i> 5 connected Tournament Rigs in private room</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated high-priority routing &amp; VLAN</li>
+                        <li><i class="fa-solid fa-check"></i> 55" 4K review screen for VoD reviews</li>
+                        <li><i class="fa-solid fa-check"></i> Dedicated server for scrims &amp; matches</li>
+                    </ul>
+                    <a href="#venue-info" class="btn-rate">Inquire for Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Venue Info, Location & Account Actions -->
+    <section class="content-section section-alternate" id="venue-info">
+        <div class="site-width">
+            <div class="venue-info-grid">
+                <!-- Location & Contact -->
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <i class="fa-solid fa-compass"></i>
+                        <h3>Location &amp; Operating Hours</h3>
+                    </div>
+                    <div class="info-details-list">
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Physical Address</strong>
+                                <p>420 N Grand Avenue, Suite 102, Arts &amp; Tech District</p>
+                                <small>Validated 3-hour garage parking available behind building.</small>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Regular Hours</strong>
+                                <p>Monday &ndash; Thursday: 12:00 PM &ndash; 12:00 AM</p>
+                                <p>Friday &ndash; Saturday: 11:00 AM &ndash; 2:00 AM</p>
+                                <p>Sunday: 11:00 AM &ndash; 11:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Contact &amp; Reservations</strong>
+                                <p>Phone: (555) 394-2091 &bull; Email: frontdesk@sector7lounge.gg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- House Rules & Session Status -->
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>House Policy &amp; Account Status</h3>
+                    </div>
+
+                    <div class="rules-box">
+                        <h4><i class="fa-solid fa-circle-info"></i> Important Venue Guidelines</h4>
+                        <ul>
+                            <li><strong>Age Limit:</strong> All ages welcome before 8:00 PM. 18+ with valid government photo ID after 8:00 PM.</li>
+                            <li><strong>Food at Stations:</strong> Food ordered from our kitchen is welcome at desks. Please keep drinks in cupholders.</li>
+                            <li><strong>Own Gear:</strong> You are encouraged to bring your own mouse, headset, and controller. Drivers auto-install on plug-in.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Session Management Box -->
+                    <div class="account-session-panel">
+                        <div class="session-info-left">
+                            <i class="fa-solid fa-user-check"></i>
+                            <div>
+                                <strong>Active Session Detected</strong>
+                                <p>Logged in via local authentication portal.</p>
+                            </div>
+                        </div>
+                        <a href="index.html" class="btn-logout-card">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span>End Session &amp; Log Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean, Grounded Footer -->
+    <footer class="site-footer">
+        <div class="site-width footer-container">
+            <div class="footer-brand-col">
+                <div class="brand-logo">
+                    <span class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+                    <span class="brand-name">SECTOR 7</span>
+                </div>
+                <p class="footer-copy-text">
+                    A modern social gaming space engineered for competitive esports, community tournaments, classic arcade culture, and craft hospitality.
+                </p>
+                <div class="social-links-row">
+                    <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#stations">Battle Stations</a></li>
+                    <li><a href="#arcade">Arcade Roster</a></li>
+                    <li><a href="#menu">Kitchen &amp; Bar</a></li>
+                    <li><a href="#pricing">Session Rates</a></li>
+                    <li><a href="#venue-info">Location &amp; Rules</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Popular Titles</h4>
+                <ul>
+                    <li>Valorant &bull; CS2</li>
+                    <li>League of Legends &bull; Dota 2</li>
+                    <li>Street Fighter 6 &bull; Tekken 8</li>
+                    <li>Apex Legends &bull; Overwatch 2</li>
+                    <li>DDR A3 &bull; Taiko no Tatsujin</li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Member Portal</h4>
+                <ul>
+                    <li><a href="index.html">Sign In Screen</a></li>
+                    <li><a href="register.html">Create Member Account</a></li>
+                    <li><a href="#pricing">Purchase Station Time</a></li>
+                    <li><a href="#venue-info">Tournament Schedules</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="site-width footer-bottom-row">
+            <p>&copy; 2026 Sector 7 Gaming Lounge &amp; Arcade LLC. All rights reserved.</p>
+            <p class="footer-tech-note">High-Performance Web Portal &bull; Branch: Edbranch</p>
+        </div>
+    </footer>
+
 </body>
 </html>
