@@ -1,3 +1,6 @@
+const API_URL = "https://db2-group.onrender.com";
+
+
 const registerForm = document.getElementById("register_Form");
 const loginForm = document.getElementById("login_Form");
 
