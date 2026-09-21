@@ -12,7 +12,7 @@ if (registerForm) {
         const email = document.getElementById("register_email").value;
         const password = document.getElementById("register_password").value;
 
-        const response = await fetch("http://localhost:5000/api/register", {
+        const response = await fetch(`${API_URL}/api/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -37,7 +37,7 @@ if (loginForm) {
         const email = document.getElementById("login_email").value;
         const password = document.getElementById("login_password").value;
 
-        const response = await fetch("http://localhost:5000/api/login", {
+        const response = await fetch(`${API_URL}/api/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
