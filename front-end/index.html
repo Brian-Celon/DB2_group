@@ -3,24 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | SECTOR 7 Gaming Lounge</title>
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <div class="container">
-    <h1>Login</h1>
-    <form class="login_form" id="login_Form">
-        <label>Email:</label>
-        <input id="login_email" type="email" class="form_input" placeholder="Enter email address"><br>
+<body class="auth-page">  
 
-        <label>Password:</label>
-        <input id="login_password" type="password" class="form_input" placeholder="Enter your password"><br>
-
-        <button class="btn_login">Login</button><br>
-        <p class="account">Don't have an account?<a href="register.html">Register</a></p>
-    </form>
+    <!-- Top Announcement Bar -->
+    <div class="top-announcement">
+        <div class="site-width announcement-inner">
+            <span>
+                <i class="fa-solid fa-circle-dot status-pulse"></i>
+                Venue Status: Open Today &bull; 11:00 AM &ndash; 2:00 AM
+            </span>
+            <span class="announcement-right">
+                <i class="fa-solid fa-shield-halved"></i> Member Terminal Calibrated
+            </span>
+        </div>
     </div>
 
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="site-width nav-inner">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-icon"><i class="fa-solid fa-bolt-lightning"></i></span>
+                <span class="brand-name">SECTOR 7</span>
+                <span class="brand-sub">LOUNGE &bull; ARCADE</span>
+            </a>
+
+            <div class="nav-user-ctrl">
+                <a href="register.html" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Register</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Auth Hero / Card Container -->
+    <main class="auth-wrapper">
+        <div class="hero-bg-overlay"></div>
+        <div class="site-width auth-container">
+            <!-- Left Info Column -->
+            <div class="auth-info-col">
+                <div class="eyebrow-pill">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Tournament Grade Arena Access</span>
+                </div>
+                <h1 class="auth-heading">
+                    Welcome Back to <span class="highlight-text">Sector 7</span>.
+                </h1>
+                <p class="auth-description">
+                    Log in to access your battle station reservations, food &amp; craft bar tab, member tournament leaderboard, and gigabit game library profiles.
+                </p>
+
+                <!-- Visual Card Frame -->
+                <div class="auth-feature-card">
+                    <div class="feature-badge"><i class="fa-solid fa-circle-check"></i> System Calibrated</div>
+                    <div class="feature-stats">
+                        <div class="f-stat">
+                            <i class="fa-solid fa-desktop"></i>
+                            <div>
+                                <strong>40 Arena Rigs</strong>
+                                <small>RTX 4080 Super &bull; 240Hz</small>
+                            </div>
+                        </div>
+                        <div class="f-stat">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <div>
+                                <strong>Arcade Lounge</strong>
+                                <small>Authentic Import Cabinets</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Column / Card -->
+            <div class="auth-card-col">
+                <div class="container auth-card">
+                    <div class="auth-card-header">
+                        <div class="auth-icon-badge">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h2>Member Sign In</h2>
+                        <p>Enter your account details to access your session</p>
+                    </div>
+
+                    <form class="login_form" id="login_Form">
+                        <div class="form-group">
+                            <label for="login_email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-envelope input-icon"></i>
+                                <input id="login_email" type="email" class="form_input" placeholder="name@sector7.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login_password">Password</label>
+                            <div class="input-wrapper">
+                                <i class="fa-solid fa-lock input-icon"></i>
+                                <input id="login_password" type="password" class="form_input" placeholder="Enter your password" required>
+                                <button type="button" class="toggle-password-btn" id="toggle_login_password" title="Toggle password visibility">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn_login btn-primary-glow">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <span>Login to Station</span>
+                        </button>
+
+                        <p class="account">
+                            Don't have an account? <a href="register.html">Register here</a>
+                        </p>
+                    </form>
+
+                    <div class="auth-card-footer">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>256-bit Encrypted Session Access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 <script src="script.js"></script>
 </body>
